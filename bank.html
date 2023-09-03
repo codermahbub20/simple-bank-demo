@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amer Amount</title>
+    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main>
+        <!-- Deposit section start -->
+        <section class="w-9/12 gap-8 grid grid-cols-3 p-10 mx-auto bg-red-300">
+            <div class="card   bg-green-500 p-10 rounded-lg text-neutral-content">
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-3xl font-bold text-white">Deposit</h1>
+                    <h3 class="text-2xl font-bold text-white">$<span id="depo-amount">00</span></h3>
+                </div>
+            </div>
+            <!-- Deposit Section end -->
+
+            <!-- Withdraw section start -->
+            <div class="card   bg-fuchsia-600 p-10 rounded-lg text-neutral-content">
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-3xl font-bold text-white">Withdraw</h1>
+                    <h3 class="text-2xl font-bold text-white">$<span class="withdraw-amount">00</span></h3>
+                </div>
+            </div>
+            <!-- Witdraw section end -->
+            <!-- TotalAmount section start -->
+            <div class="card   bg-pink-600 p-10 rounded-lg text-neutral-content">
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-3xl font-bold text-white">Total Amount</h1>
+                    <h3 class="text-2xl font-bold text-white">$<span id="balance-total">1240</span></h3>
+                </div>
+            </div>
+            <!-- TotalAmount section end -->
+        </section>
+
+        <section class="w-9/12 gap-8 grid grid-cols-2 p-10 mx-auto mt-4 bg-green-200">
+            <div class="card   bg-orange-400 p-10 rounded-lg text-neutral-content">
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-3xl font-bold text-white">Deposit</h1>
+                    <input id="deposit-input" class="block w-9/12 mx-auto mt-3" placeholder="$ enter your deposit amount" type="number">
+                    <button id="deposit-btn" class="bg-red-500 px-5 mt-3 rounded-lg text-xl text-white py-2">Deposit</button>
+                </div>
+            </div>
+
+            <div class="card   bg-emerald-500 p-10 rounded-lg text-neutral-content">
+                <div class="card-body items-center text-center">
+                    <h1 class="card-title text-3xl font-bold text-white">Withdraw</h1>
+                    <input id="withdraw-input" class="block w-9/12 mx-auto mt-3" placeholder="$ enter your Withdraw amount" type="text">
+                    <button  id="withdraw-btn" class="bg-red-500 px-5 mt-3 rounded-lg text-xl text-white py-2">Witdraw</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <script src="./JavaScript/amount.js"></script>
+
+    <script src="JavaScript/withdraw.js"></script>
+
+</body>
+
+</html>
