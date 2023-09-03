@@ -6,7 +6,7 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     
     const passInput = document.getElementById('pass-input');
     const passValue = passInput.value;
-    passInput.value = ' ';
+    // passInput.value = ' ';
     
     if (emailValue == 'mkrefat5@gmail.com' && passValue == 'koitamnah') {
         window.open('bank.html')
